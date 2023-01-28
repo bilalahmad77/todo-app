@@ -4,7 +4,9 @@ async function update(id, isDone,refresh) {
   //await fetch(`http://127.0.0.1:3001/api/todo/update`
   await fetch(`/api/todo/update`, {
     method: "POST",
-    // mode:'no-cors',
+    // mode:'no-cors', for local host
+    // for vercel
+    mode:'no-cors',
     body: JSON.stringify({ id, isDone }),
   });
 refresh();
@@ -14,7 +16,9 @@ async function deleteTodo(id,refresh) {
   //await fetch(`http://127.0.0.1:3001/api/todo/delete?id=${id}`
   await fetch(`/api/todo/delete?id=${id}`, {
     method: "DELETE",
-     //mode:'no-cors',
+     //mode:'no-cors', for local host
+     // for vercel
+     mode:'no-cors',
   });
 refresh();
 }
