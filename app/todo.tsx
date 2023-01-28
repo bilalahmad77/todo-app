@@ -23,6 +23,7 @@ async function deleteTodo(id:any,refresh:any) {
 refresh();
 }
 
+{/* @ts-expect-error Server Component */}
 export default function Todo({todo}){
   const router = useRouter();
   return(
