@@ -6,7 +6,7 @@ async function update(id:any, isDone:any,refresh:any) {
     method: "POST",
     // mode:'no-cors', for local host
     // for vercel
-    mode:'no-cors',
+    //mode:'no-cors',
     body: JSON.stringify({ id, isDone }),
   });
 refresh();
@@ -18,7 +18,7 @@ async function deleteTodo(id:any,refresh:any) {
     method: "DELETE",
      //mode:'no-cors', for local host
      // for vercel
-     mode:'no-cors',
+    // mode:'no-cors',
   });
 refresh();
 }
