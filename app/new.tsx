@@ -10,7 +10,7 @@ async function update(id : any, isDone: any, refresh: any) {
   refresh(); 
 }
 
-const deleteTodo = async (id, refresh ) => { 
+const deleteTodo = async (id:any, refresh:any ) => { 
   await fetch (`/api/todo/delete?id=${id}`, {
     method : 'DELETE'
   }); 

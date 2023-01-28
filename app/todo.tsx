@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-async function update(id, isDone,refresh) {
+async function update(id:any, isDone:any,refresh:any) {
   //await fetch(`http://127.0.0.1:3001/api/todo/update`
   await fetch(`/api/todo/update`, {
     method: "POST",
@@ -12,7 +12,7 @@ async function update(id, isDone,refresh) {
 refresh();
 }
 
-async function deleteTodo(id,refresh) {
+async function deleteTodo(id:any,refresh:any) {
   //await fetch(`http://127.0.0.1:3001/api/todo/delete?id=${id}`
   await fetch(`/api/todo/delete?id=${id}`, {
     method: "DELETE",
