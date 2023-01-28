@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import {useState} from "react";
 
-async function addTodo (name,refresh) {
+async function addTodo (name:any,refresh:any) {
   await fetch(`/api/todo/add`,
   {
     method:"POST",
