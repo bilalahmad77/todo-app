@@ -24,7 +24,9 @@ refresh();
 }
 
 
-export default function Todo({todo}:{todo:any}){
+// export default function Todo({todo}:{todo:any}){
+  {/* @ts-expect-error Server Component */}
+  export default function Todo({todo}){
   const router = useRouter();
   return(
     <>
