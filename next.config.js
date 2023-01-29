@@ -7,7 +7,7 @@ const nextConfig = {
         return [{
             source: "/api/:path*",
             //destination: "http://127.0.0.1:3001/api/:path*",
-            destination: "https://vercel.com/bilalahmad77/json-api-main/api/:path*",
+            destination: "https://json-api-main.vercel.app/",
 
 
         }, ];
